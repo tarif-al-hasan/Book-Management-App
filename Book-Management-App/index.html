@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <title>book management app</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center text-info">Book List</h1>
+
+      <div class="row py-5">
+        <div class="col-6 py-5">
+          <form action="#">
+            <h2>Add Book</h2>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Book Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="bookName"
+                placeholder="Enter Book Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="Author">Author</label>
+              <input
+                type="text"
+                class="form-control"
+                id="author"
+                placeholder="Author Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="pulisherYear">publisher year</label>
+              <input
+                type="number"
+                class="form-control"
+                id="publisherYear"
+                placeholder="publiser year"
+              />
+            </div>
+            <div class="form-group">
+              <label for="publisherCenter">publisher center</label>
+              <input
+                type="text"
+                class="form-control"
+                id="publisherCenter"
+                placeholder="publiser center"
+              />
+            </div>
+            <button class="btn btn-success w-100 my-3" id="addBtn">Add</button>
+          </form>
+        </div>
+        <div class="col-6 py-5">
+          <form action="#">
+            <h2>Book list</h2>
+            <table class="table table-striped mt-5 text-center">
+              <thead>
+                <tr>
+                  <th>Book Name</th>
+                  <th>Author</th>
+                  <th>publisher year</th>
+                  <th>publisher center</th>
+                  <th>Delete</th>
+                </tr>
+              </thead>
+              <tbody id="listBody"></tbody>
+            </table>
+            <button class="btn btn-danger w-100 my-3" id="removeAllBtn">
+              Remove All
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--  Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- custom css -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
